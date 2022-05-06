@@ -1,0 +1,11 @@
+{
+  "name": "comp-sci",
+  "version": "1.0.0",
+  "description": "comp-sci study",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}

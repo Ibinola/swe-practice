@@ -33,7 +33,7 @@ return 120
 
 - Base Case = The condition when the recursion ends.
 
-- Different input
+- Different Input
 
 <h2>Problems during recursion</h2>
 
