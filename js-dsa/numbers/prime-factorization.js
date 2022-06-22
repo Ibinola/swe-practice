@@ -20,8 +20,5 @@ function prime(n) {
 
 }
 
-var result = prime(10);
-
-console.log(result)
-
+prime(10);
 
