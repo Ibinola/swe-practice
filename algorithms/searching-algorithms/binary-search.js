@@ -31,4 +31,4 @@ function binarySearch(arr, val) {
   return arr[mid] === val ? mid : -1;
 }
 
-console.log(binarySearch([2, 5, 6, 9, 13, 15, 28, 30, 49, 60], 13))
+binarySearch([2, 5, 6, 9, 13, 15, 28, 30, 49, 60], 13) // 4
