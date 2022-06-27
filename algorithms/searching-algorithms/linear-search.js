@@ -11,4 +11,4 @@ function linearSearch(arr, val) {
     return -1;
 }
 
-console.log(linearSearch([2, 8, 1, 3, 5], 10));
+linearSearch([2, 8, 1, 3, 5], 5); // 4
