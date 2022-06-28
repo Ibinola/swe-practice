@@ -24,16 +24,16 @@ console.log(twoSum([2, 5, 5, 11], 10)) // (2) [1, 2]
 function twoSum(nums, target) {
     const hashtable = {} // Stores the seen number: {seenNumber: IndexitOccured}
 
-    for (let i = 0; i < nums.length; i++) {
+    for (let i = 0; i < nums.length; i++) { // loop through all numbers
         const n = nums[i]; // Stores the current number num 
 
-        if (hashtable[target - n] !== undefined) {
-            return [hashtable[target - n], i]
+        if (hashtable[target - n] !== undefined) { // check if the number we need to add to 'n' to reach our target has been seen:
+            return [hashtable[target - n], i] // grab the index of seen number, and ihe index of the current number
         }
-        hashtable[n] = i // updates the hashtable
+        hashtable[n] = i // updates the hashtable to include the number we just saw along with its index.
     }
 
-    return [];
+    return []; // if no numbers add up to equal the 'target', we can return an empty array
 }
 
-twoSum([2, 5, 5, 11], 10)
+twoSum([2, 5, 5, 11], 10) // (2) [1,2]
