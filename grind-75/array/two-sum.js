@@ -21,5 +21,19 @@ console.log(twoSum([2, 5, 5, 11], 10)) // (2) [1, 2]
 // Store numbers in hashtable and then for each number num, check if "T - num" also in our hash table.
 // Time Complexity: O(n), Space Complexity is O(n) as well. this is called time-space complexity trade off, when we try to decrease time complexity we need to increase space complexity
 
+function twoSum(nums, target) {
+    const hashtable = {} // Stores the seen number: {seenNumber: IndexitOccured}
 
+    for (let i = 0; i < nums.length; i++) {
+        const n = nums[i]; // Stores the current number num 
 
+        if (hashtable[target - n] !== undefined) {
+            return [hashtable[target - n], i]
+        }
+        hashtable[n] = i // updates the hashtable
+    }
+
+    return [];
+}
+
+twoSum([2, 5, 5, 11], 10)
