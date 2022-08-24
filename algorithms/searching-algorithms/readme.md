@@ -22,6 +22,8 @@ The best we can do with an unsorted piece of data.
 - Average Case = O(n)
 - Best Case = O(1)
 
+[Implementation](./linear-search.js)
+
 <h1>Binary Search</h1>
 
 - Much faster form of search
@@ -30,7 +32,7 @@ The best we can do with an unsorted piece of data.
 
 **Implementation Idea**
 
-Divide and Conquer - Split the array in two pieces, pick a pivot point in the mid, check left and right side and see where it would be based on what we are looking for. 
+Divide and Conquer - Split the array in two pieces, pick a pivot point in the mid, check left and right side and see where it would be based on what we are looking for.
 
 Remember it has to be **sorted**.
 
